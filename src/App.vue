@@ -94,6 +94,7 @@ export default {
       if (rawCity.name == '' || rawCity.name == null) {
         this.searchQuery += searchValue;
         this.hasError = true;
+        this.searchQuery += ' ';
         console.log(this.searchQuery);
         return;
       }
